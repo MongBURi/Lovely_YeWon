@@ -1,0 +1,57 @@
+div {
+    text-align: center;
+    margin: auto;
+}
+hr {
+    width: 70%;
+}
+p {
+    border: 3px solid black;
+    display: inline-block;
+    /* 5px :: 상하, 25px :: 좌우*/
+    padding: 5px 25px;
+    height: 200px;
+    background-color: white;
+
+    /* ◆ transition :: "전환"과 관련한 스타일 부여    */
+    transition: all 2s;     /*전환과 관련한 모든 진행 시간을 2초로 지정한다*/
+    transition-timing-function: ease-in-out;   /*전환 형식 :: 디폴트(linear:: 일정한 속도로 변동하게끔 한다)*/
+    transition-delay: 1s;   /*1초 정도 가만히 있다가 전환을 수행한다*/
+}
+
+/* ◆ 반응 선택자 :: 
+    ":active(마우스로 눌렀을 때 스타일 적용)"
+    ":hover(커서를 갖다댔을 때 스타일 적용)"
+    [선택자]:hover/active { 선언문들 }    */
+
+#C:hover {
+    background-color:lightcoral;
+}
+#D:hover {
+    background-color:orange;
+}
+#E:hover {
+    background-color:khaki;
+}
+#F:hover {
+    background-color:yellowgreen;
+}
+#G:hover {
+    background-color:royalblue;
+}
+#A:hover {
+    background-color:navy;
+}
+#B:hover {
+    background-color:darkorchid;
+}
+
+p:active {
+    color:white;
+    height: 250px;
+    font-size: larger;
+}
+
+
+
+

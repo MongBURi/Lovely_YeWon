@@ -1,0 +1,15 @@
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\bin\Debug\231106_GooByeCShap.exe.config
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\bin\Debug\231106_GooByeCShap.exe
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\bin\Debug\231106_GooByeCShap.pdb
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\231106_GooByeCShap.csproj.AssemblyReference.cache
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\_231106_GooByeCShap.Form1.resources
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\_231106_GooByeCShap.Properties.Resources.resources
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\231106_GooByeCShap.csproj.GenerateResource.cache
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\231106_GooByeCShap.csproj.CoreCompileInputs.cache
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\231106_GooByeCShap.exe
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\231106_GooByeCShap.pdb
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\_231106_GooByeCShap.Form2.resources
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\_231106_GooByeCShap.HeyLotto.resources
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\bin\Debug\Newtonsoft.Json.dll
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\bin\Debug\Newtonsoft.Json.xml
+D:\work_CShap\231106_GooByeCShap\231106_GooByeCShap\obj\Debug\231106_GooByeCShap.csproj.CopyComplete

@@ -1,0 +1,10 @@
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\bin\Debug\231102_HelloCShap06.exe.config
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\bin\Debug\231102_HelloCShap06.exe
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\bin\Debug\231102_HelloCShap06.pdb
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\obj\Debug\231102_HelloCShap06.csproj.AssemblyReference.cache
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\obj\Debug\_231102_HelloCShap06.Form1.resources
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\obj\Debug\_231102_HelloCShap06.Properties.Resources.resources
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\obj\Debug\231102_HelloCShap06.csproj.GenerateResource.cache
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\obj\Debug\231102_HelloCShap06.csproj.CoreCompileInputs.cache
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\obj\Debug\231102_HelloCShap06.exe
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06\obj\Debug\231102_HelloCShap06.pdb

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231222_10시_미디어쿼리</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>브라우저 창을 늘렸다 줄였다 해보세요:)</p>
+    <hr>
+
+    <!-- <picture> 태그 :: srcset, media 속성(동적인 화면 변경과 관련됨) -->
+    <!-- src 속성 :: 무언가를 불러오는 속성 -->
+    <!-- srcset 속성 :: sec의 의미 + "set"-->
+    <!-- picture 태그와 source 태그를 함께 사용하여
+        보여주는 위치는 공유하되, 불러오는 이미지는 조건에 따라 다르게 설정한다. -->
+
+    <!-- alt 속성 :: 오류났을 때 나오는 문구 설정 -->
+
+    <picture>
+        <!-- 높이가 500px 이하일 때, 아래 사진을 보여주어라. -->
+        <source srcset="https://item.kakaocdn.net/do/00bdc8c728c322cf85b9092a0655870e26397d82c8691bdabf557d1536959d9c" 
+            alt="이미지를 불러오지 못하였습니다." media="(max-height:500px)">
+        
+        <!-- 높이가 500px 초과, 700px 이하일 때 표현됨 -->
+        <source srcset="https://www.artinsight.co.kr/data/tmp/2206/20220613140207_qgstsfsb.png" 
+            alt="이미지를 불러오지 못하였습니다." media="(max-height:700px)">
+
+        <!-- 위 조건이 아닐 시, 무조건 떠야하는 사진 -->
+        <source srcset="https://item.kakaocdn.net/do/9f9751a9d1857e151d551434b93cdcd18f324a0b9c48f77dbce3a43bd11ce785" 
+            alt="이미지를 불러오지 못하였습니다.">
+
+        <!-- 보여줄 위치(img), 크기(width/height) 지정 -->
+        <img style="width: 400px; height: 400px;">
+
+        <!-- source 태그들 중 하나는 media 설정을 해주면 안 됨.(필수사항) -->
+        <!-- 조건에 상관없이 디폴트로 떠야하는 사진이 하나는 무조건 있어야 한다. -->
+    </picture>
+
+</body>
+</html>

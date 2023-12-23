@@ -1,0 +1,9 @@
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\obj\Debug\231030_HelloCShap03_Class.csproj.AssemblyReference.cache
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\obj\Debug\_231030_HelloCShap03_Class.Properties.Resources.resources
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\obj\Debug\231030_HelloCShap03_Class.csproj.GenerateResource.cache
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\obj\Debug\231030_HelloCShap03_Class.csproj.CoreCompileInputs.cache
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\bin\Debug\231030_HelloCShap03_Class.exe.config
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\bin\Debug\231030_HelloCShap03_Class.exe
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\bin\Debug\231030_HelloCShap03_Class.pdb
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\obj\Debug\231030_HelloCShap03_Class.exe
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Class\obj\Debug\231030_HelloCShap03_Class.pdb

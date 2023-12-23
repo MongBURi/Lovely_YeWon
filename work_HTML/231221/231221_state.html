@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231221 10시_상태 선택자</title>
+    <style>
+        /* ◆ 상태 선택자 :: :checked, :focus, :enabled, :disabled 
+            focus는 enabled 아래로 적용.    */
+        input:enabled {
+            background-color: bisque;
+        }
+        input:focus {
+            background-color: aquamarine;
+        }
+        input:disabled {
+            background-color: gray;
+        }
+
+        /* 타입이 체크박스인 input태그를 체크했을 때, div 스타일을 적용할 거당 */
+        input[type="checkbox"]:checked + div {
+            height: 0px;
+        }
+        div {
+            border: 3px solid black;
+            width: 600px;
+            height: 300px;
+            overflow: hidden;   
+            /* (위의 높이0 조건으로)공간이 모자랄 때 숨겨버린다 */
+            transition-duration: 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>:focus 적용</h1>
+    <input type="text" name="t1" id="t1">
+    <hr>
+    <h1>:enabled 적용</h1>
+    <input type="text" name="t2" id="t2">
+    <hr>
+    <h1>:disabled 적용</h1>
+    <input type="text" name="t3" id="t3" disabled>
+    <hr>
+    <br>
+
+    <input type="checkbox">
+    <div>
+        <h1>아무 내용</h1>
+        <h2>아무 내용</h2>
+        <h3>아무 내용</h3>
+    </div>
+
+</body>
+</html>

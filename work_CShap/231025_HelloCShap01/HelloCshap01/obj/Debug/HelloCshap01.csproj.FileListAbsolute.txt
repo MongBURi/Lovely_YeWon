@@ -1,0 +1,7 @@
+D:\work_Cshap\HelloCshap01\HelloCshap01\bin\Debug\HelloCshap01.exe.config
+D:\work_Cshap\HelloCshap01\HelloCshap01\bin\Debug\HelloCshap01.exe
+D:\work_Cshap\HelloCshap01\HelloCshap01\bin\Debug\HelloCshap01.pdb
+D:\work_Cshap\HelloCshap01\HelloCshap01\obj\Debug\HelloCshap01.csproj.AssemblyReference.cache
+D:\work_Cshap\HelloCshap01\HelloCshap01\obj\Debug\HelloCshap01.csproj.CoreCompileInputs.cache
+D:\work_Cshap\HelloCshap01\HelloCshap01\obj\Debug\HelloCshap01.exe
+D:\work_Cshap\HelloCshap01\HelloCshap01\obj\Debug\HelloCshap01.pdb

@@ -1,0 +1,7 @@
+D:\work_Cshap\HelloCshap01\231025_01_Ex2\bin\Debug\231025_01_Ex2.exe.config
+D:\work_Cshap\HelloCshap01\231025_01_Ex2\bin\Debug\231025_01_Ex2.exe
+D:\work_Cshap\HelloCshap01\231025_01_Ex2\bin\Debug\231025_01_Ex2.pdb
+D:\work_Cshap\HelloCshap01\231025_01_Ex2\obj\Debug\231025_01_Ex2.csproj.AssemblyReference.cache
+D:\work_Cshap\HelloCshap01\231025_01_Ex2\obj\Debug\231025_01_Ex2.csproj.CoreCompileInputs.cache
+D:\work_Cshap\HelloCshap01\231025_01_Ex2\obj\Debug\231025_01_Ex2.exe
+D:\work_Cshap\HelloCshap01\231025_01_Ex2\obj\Debug\231025_01_Ex2.pdb

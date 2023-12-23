@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즐거운 음악 시간</title>
+</head>
+<body>
+    <!-- <audio>태그 :: 음성 파일을 배치할 때 사용 -->
+    <h3>밴드 알림소리</h3>
+    <audio src="[밴드알림음] basic01_new.mp3" loop controls>    <!-- 이렇게 잘 안 씀 -->
+        <!-- loop :: 무한반복, controls :: 재생바 표시 -->
+        이 브라우저는 해당 양식을 지원하지 않습니다.
+    </audio>
+
+    <h3>밴드 알림소리2</h3>
+    <audio loop controls>   <!-- 이런 식으로 작성하면 타입에 해당되는 파일 재생함 -->
+        <source src="[밴드알림음] basic01_new.mp3" type="audio/mp3"/>
+        <!--<source src="[밴드알림음] basic01_new.ogg" type="audio/ogg"/>-->
+    </audio>
+
+
+</body>
+</html>

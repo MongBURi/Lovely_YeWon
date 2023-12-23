@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+</head>
+
+<body>
+    <!-- 표를 만들 때에는 <table>태그 사용 -->
+    <table border="1px solid black"> <!-- border :: 테두리 설정 -->
+        <tbody> <!-- <table>태그 생성과 동시에 생략되어 나타남(없어도 됨) -->
+
+            <caption>인적사항</caption> <!-- <caption> :: 표를 설명할 때 사용 -->
+
+            <!-- <colgroup>태그 :: 열을 그룹화하여 스타일 적용할 때 사용(<col>태그와 함께)-->
+            <colgroup>
+                <col style="background-color:pink">
+                <col span="2" style="background-color:ivory">
+            </colgroup>
+
+            <!-- <tr>, <th>, <td>를 사용하여 행과 열을 구성한다 -->
+            <!-- <tr> :: 행을 하나식 추가할 때 사용 -->
+            <!-- <th>, <td> :: 각각 테이블 헤더, 테이블의 실질적인 데이터를 의미 -->
+            <tr style="background-color:khaki;" <tr> <!-- 1행 -->
+                <th>이름</th> <!-- 3열 -->
+                <th>성별</th>
+                <th>생일</th>
+            </tr>
+            <tr> <!-- 2행 -->
+                <td>이유나</td>
+                <td>여성</td>
+                <td>07월 30일</td>
+            </tr>
+            <tr>
+                <td>신예원</td>
+                <td>여성</td>
+                <td>알 수 없음</td>
+            </tr>
+            <tr>
+                <td>최효정</td>
+                <td>여성</td>
+                <td>09월 22일</td>
+            </tr>
+        </tbody>
+        <!-- <thead>, <tbody>, <tfoot> :: 헤더, 본문, 바닥글을 의미 -->
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <th>음식명</th>
+            <th>가격(원)</th>
+            <th>칼로리(kcal)</th>
+        </tr>
+        <tr>
+            <td>김밥</td>
+            <td>3500</td>
+            <td>500</td>
+        </tr>        
+    </table>
+
+</body>
+
+</html>

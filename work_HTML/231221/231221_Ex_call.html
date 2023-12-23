@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231221_2시_연습문제</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        hr {
+            width: 20%;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        input[type="submit"] {
+            width: 10%;
+            padding: 5px;            
+        }
+
+        @keyframes size {
+            0% {
+                width:100px;
+                height: 100px;
+            }
+            25% {
+                width:150px;
+                height: 150px;
+            }
+            50% {
+                width:200px;
+                height: 200px;
+                
+            }
+            75% {
+                width:150px;
+                height: 150px;
+            }
+            100% {
+                width:100px;
+                height: 100px;
+            }
+        }
+        .size {
+            animation: size 4s infinite;
+        }
+
+        .side-body {
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .side-div1 {
+            border: 3px solid black;
+
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .side-div2 {
+            border: 3px solid black;
+            width: 50%; /* 양 옆으로 나누기 위해 50%로 설정 */
+            padding: 20px;
+            box-sizing: border-box; /* padding을 포함한 전체 크기를 설정 */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>전화가 왔습니다. 받으시겠습니까?</h1>
+    <hr>
+    <div class="side-body">
+        <div class="side-div1">
+            <form action="231221_Ex_call2.html">
+                <input type="submit" value="전화받기"><br><br>
+                <img src="tel.png" class="size">
+            </form>
+        </div>
+        <div class="side-div2">
+            <form action="231221_Ex_call2.html">
+                <input type="submit" value="전화거절"><br><br>
+                <img src="tel2.jpg" class="size">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

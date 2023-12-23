@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231221 10시_구조 선택자</title>
+    <style>
+        /* ◆ 구조 선택자 :: :first-child, :last-child */
+        /* h1:first-child → 첫 번째로 나타나는 태그가 반드시 h1이여야만 적용된다. */
+        /* p:last-child → 마지막으로 나타나는 태그가 반드시 p여만 적용된다. */
+        /* p:nth-child(2) → 앞에서 두 번째로 나타난 태그가 p태그여야 적용된다. */
+        /* p:nth-last-child(2) → 뒤에서 두 번째로 나타나는 태그가 p태그여야만 적용된다. */
+        /* ★ 반드시 지정된 위치에 지정된 태그가 있어야만 스타일이 적용된다. */
+        p:nth-last-child(2) {    
+            color:red;
+        }
+
+        /* ◆ 구조 선택자 :: :first-of-type, :last-of-type (좀 더 융통성 있음)*/
+        /* h1:first-of-type → 처음으로 나타난 h1태그에 대해 스타일 적용한다. */
+        /* h1:last-of-type → 처음이자 마지막이므로 적용됨.*/
+        /* p:nth-of-type(2) → 지정된 태그의 몇 번째냐*/
+        /* p:nth-last-of-type(2) → 헤더2 위에 있는 p태그(p태그 중 뒤에서 2번째)가 적용됨 */
+        p:nth-last-of-type(2) {
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>헤더1</h1>
+    <p>p 태그</p>
+    <p>p 태그</p>
+    <p>p 태그</p>
+    <p>p 태그</p>
+    <h3>헤더2</h3>
+    <p>p 태그</p>
+
+</body>
+</html>

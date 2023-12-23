@@ -1,0 +1,10 @@
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\bin\Release\231103_HelloCShap07_Linq.exe.config
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\bin\Release\231103_HelloCShap07_Linq.exe
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\bin\Release\231103_HelloCShap07_Linq.pdb
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\obj\Release\231103_HelloCShap07_Linq.csproj.AssemblyReference.cache
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\obj\Release\_231103_HelloCShap07_Linq.Form1.resources
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\obj\Release\_231103_HelloCShap07_Linq.Properties.Resources.resources
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\obj\Release\231103_HelloCShap07_Linq.csproj.GenerateResource.cache
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\obj\Release\231103_HelloCShap07_Linq.csproj.CoreCompileInputs.cache
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\obj\Release\231103_HelloCShap07_Linq.exe
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07_Linq\obj\Release\231103_HelloCShap07_Linq.pdb

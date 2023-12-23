@@ -1,0 +1,10 @@
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\obj\Debug\HelloCshap01_02_WindowForm.csproj.AssemblyReference.cache
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\obj\Debug\HelloCshap01_02_WindowForm.Form1.resources
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\obj\Debug\HelloCshap01_02_WindowForm.Properties.Resources.resources
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\obj\Debug\HelloCshap01_02_WindowForm.csproj.GenerateResource.cache
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\obj\Debug\HelloCshap01_02_WindowForm.csproj.CoreCompileInputs.cache
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\bin\Debug\HelloCshap01_02_WindowForm.exe.config
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\bin\Debug\HelloCshap01_02_WindowForm.exe
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\bin\Debug\HelloCshap01_02_WindowForm.pdb
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\obj\Debug\HelloCshap01_02_WindowForm.exe
+D:\work_Cshap\HelloCshap01\HelloCshap01_02_WindowForm\obj\Debug\HelloCshap01_02_WindowForm.pdb

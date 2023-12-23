@@ -1,0 +1,7 @@
+D:\work_CShap\231026_Ex\231026_Ex\bin\Debug\231026_Ex.exe.config
+D:\work_CShap\231026_Ex\231026_Ex\bin\Debug\231026_Ex.exe
+D:\work_CShap\231026_Ex\231026_Ex\bin\Debug\231026_Ex.pdb
+D:\work_CShap\231026_Ex\231026_Ex\obj\Debug\231026_Ex.csproj.AssemblyReference.cache
+D:\work_CShap\231026_Ex\231026_Ex\obj\Debug\231026_Ex.csproj.CoreCompileInputs.cache
+D:\work_CShap\231026_Ex\231026_Ex\obj\Debug\231026_Ex.exe
+D:\work_CShap\231026_Ex\231026_Ex\obj\Debug\231026_Ex.pdb

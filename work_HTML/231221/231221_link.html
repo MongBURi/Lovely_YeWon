@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231221_10시_링크 태그</title>
+    <style>
+        /* ◆ 링크 선택자
+        :link :: href속성값을 갖고 있는 a 태그를 선택
+        :visited :: 이미 지정된 링크를 방문한 태그에 스타일 적용
+        */
+        a:link {    /* 방문 전 */
+            color:dimgray;
+        }
+        a:visited { /* 방문 후 */
+            color:darkred;
+        }
+
+        #naver:active {
+            color:green;
+        }
+        #daum:active {
+            color:cornflowerblue;
+        }
+        #google:active {
+            color:khaki;
+        }
+
+        @keyframes rainbowAnimation {
+            0% {
+                color: #ff0000;
+            }
+            20% {
+                color: #ff9900;
+            }
+            40% {
+                color: #33cc33;
+            }
+            60% {
+                color: #3399ff;
+            }
+            80% {
+                color: #9900cc;
+            }
+            100% {
+                color: #ff0000;
+            }
+        }
+        .rainbow-text {
+            animation: rainbowAnimation 4s linear infinite;
+            /* 4초 동안 애니메이션을 반복하는데, 시간이나 속도 등은 조절 가능합니다. */
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com/" id="naver">네이버로 이동</a><br>
+    <a href="https://www.daum.net/" id="daum">다음으로 이동</a><br>
+    <a href="https://www.google.com/" id="google">구글로 이동</a><br>
+    <hr>
+    <a href="https://www.youtube.com/" id="youtube"><span class="rainbow-text">유튜브로 이동</span></a>
+
+</body>
+</html>

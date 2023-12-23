@@ -1,0 +1,13 @@
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\bin\Debug\231106_HeyApi.exe.config
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\bin\Debug\231106_HeyApi.exe
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\bin\Debug\231106_HeyApi.pdb
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\bin\Debug\Newtonsoft.Json.dll
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\bin\Debug\Newtonsoft.Json.xml
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\231106_HeyApi.csproj.AssemblyReference.cache
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\_231106_HeyApi.Form1.resources
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\_231106_HeyApi.Properties.Resources.resources
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\231106_HeyApi.csproj.GenerateResource.cache
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\231106_HeyApi.csproj.CoreCompileInputs.cache
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\231106_HeyApi.csproj.CopyComplete
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\231106_HeyApi.exe
+D:\work_CShap\231106_GooByeCShap\231106_HeyApi\obj\Debug\231106_HeyApi.pdb

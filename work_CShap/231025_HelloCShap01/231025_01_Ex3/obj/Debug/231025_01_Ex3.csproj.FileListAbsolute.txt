@@ -1,0 +1,7 @@
+D:\work_Cshap\HelloCshap01\231025_01_Ex3\bin\Debug\231025_01_Ex3.exe.config
+D:\work_Cshap\HelloCshap01\231025_01_Ex3\bin\Debug\231025_01_Ex3.exe
+D:\work_Cshap\HelloCshap01\231025_01_Ex3\bin\Debug\231025_01_Ex3.pdb
+D:\work_Cshap\HelloCshap01\231025_01_Ex3\obj\Debug\231025_01_Ex3.csproj.AssemblyReference.cache
+D:\work_Cshap\HelloCshap01\231025_01_Ex3\obj\Debug\231025_01_Ex3.csproj.CoreCompileInputs.cache
+D:\work_Cshap\HelloCshap01\231025_01_Ex3\obj\Debug\231025_01_Ex3.exe
+D:\work_Cshap\HelloCshap01\231025_01_Ex3\obj\Debug\231025_01_Ex3.pdb

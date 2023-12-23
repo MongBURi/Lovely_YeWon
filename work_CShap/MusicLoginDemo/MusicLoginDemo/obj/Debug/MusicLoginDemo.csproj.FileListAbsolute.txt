@@ -1,0 +1,10 @@
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\bin\Debug\MusicLoginDemo.exe.config
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\bin\Debug\MusicLoginDemo.exe
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\bin\Debug\MusicLoginDemo.pdb
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\obj\Debug\MusicLoginDemo.csproj.AssemblyReference.cache
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\obj\Debug\MusicLoginDemo.Form1.resources
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\obj\Debug\MusicLoginDemo.Properties.Resources.resources
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\obj\Debug\MusicLoginDemo.csproj.GenerateResource.cache
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\obj\Debug\MusicLoginDemo.csproj.CoreCompileInputs.cache
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\obj\Debug\MusicLoginDemo.exe
+D:\work_CShap\MusicLoginDemo\MusicLoginDemo\obj\Debug\MusicLoginDemo.pdb

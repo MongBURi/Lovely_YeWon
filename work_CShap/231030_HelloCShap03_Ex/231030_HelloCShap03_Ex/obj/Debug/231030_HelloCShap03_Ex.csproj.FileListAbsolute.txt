@@ -1,0 +1,10 @@
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\bin\Debug\231030_HelloCShap03_Ex.exe.config
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\bin\Debug\231030_HelloCShap03_Ex.exe
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\bin\Debug\231030_HelloCShap03_Ex.pdb
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\obj\Debug\231030_HelloCShap03_Ex.csproj.AssemblyReference.cache
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\obj\Debug\_231030_HelloCShap03_Ex.Form1.resources
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\obj\Debug\_231030_HelloCShap03_Ex.Properties.Resources.resources
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\obj\Debug\231030_HelloCShap03_Ex.csproj.GenerateResource.cache
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\obj\Debug\231030_HelloCShap03_Ex.csproj.CoreCompileInputs.cache
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\obj\Debug\231030_HelloCShap03_Ex.exe
+D:\work_CShap\231030_HelloCShap03_Ex\231030_HelloCShap03_Ex\obj\Debug\231030_HelloCShap03_Ex.pdb

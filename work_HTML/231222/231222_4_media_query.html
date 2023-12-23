@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231222_11시_미디어쿼리2</title>
+    <style>
+        p {
+            width: 150px;
+            height: 150px;
+            background-color:whitesmoke;
+            border: 2px solid black;
+        }
+
+        /* ex)
+        "특정 조건식을 만족한다면, 아래처럼 반응하라."
+        @media screen and (조건식) {
+            선택자 { 스타일 적용문 }
+        }
+        */
+
+        /* 높이가 300px 초과, 500px 이하일 때 적용 */
+        @media screen and (max-height:500px) {
+            p {
+                background-color:lightblue;
+            }
+        }
+
+        /* 높이가 300px 이하일 때 적용하라 */
+        @media screen and (max-height:300px) {
+            p {
+                background-color: lightcoral;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <p>색깔이 바뀝니당!</p>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\bin\Debug\231102_HelloCShap06_Try.exe.config
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\bin\Debug\231102_HelloCShap06_Try.exe
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\bin\Debug\231102_HelloCShap06_Try.pdb
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\obj\Debug\231102_HelloCShap06_Try.csproj.AssemblyReference.cache
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\obj\Debug\_231102_HelloCShap06_Try.Form1.resources
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\obj\Debug\_231102_HelloCShap06_Try.Properties.Resources.resources
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\obj\Debug\231102_HelloCShap06_Try.csproj.GenerateResource.cache
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\obj\Debug\231102_HelloCShap06_Try.csproj.CoreCompileInputs.cache
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\obj\Debug\231102_HelloCShap06_Try.exe
+D:\work_CShap\231102_HelloCShap06\231102_HelloCShap06_Try\obj\Debug\231102_HelloCShap06_Try.pdb

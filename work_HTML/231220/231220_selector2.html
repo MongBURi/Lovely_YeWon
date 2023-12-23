@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ◆ 후손 선택자 :: 특정 태그 안에 있는 후손을 선택한다
+            [선택자1]□[선택자2] { 선언문들 }    → (공백(□)을 이용해서 후손을 선택한다)  */
+        /* ◆ 자손 선택자 :: 특정 태그 "바로 안에 있는" 자손을 선택한다.
+            [선택자1]>[선택자2] { 선언문들 }    (">" 기호 사용) */
+
+        div h3 {
+            color:blue;
+        }
+        /*#header h3, p {} :: #header의 후손인 h3와 모든 p태그에 대해 스타일이 지정된다.*/
+        /*#header h3, #header p {} :: #header의 후손인 p태그에만 스타일이 적용됨.*/
+        #header h3, #header>p {
+            border: 3px solid red;
+        }
+
+        table>tr {      /*tbody태그(생략)가 직속 후손이라 tr태그에 적용 안 됨*/
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h3>헤더 안의 h3</h3>   <!-- #header div의 후손-->
+        <!--<p>헤더 안의 p</p>-->
+        <div>                      <!-- 다른 div에 감싸져 있음 -->
+            <p>헤더 안의 p</p>      <!-- #header div의 수혼은 맞지만, 자손은 아닌 상태 -->
+        </div>
+    </div>
+
+    <div id="para">
+        <h3>본문 안의 h3</h3>   <!-- #para div의 후손-->
+        <p>본문 안의 p</p>
+    </div><hr>
+
+    <table>
+        <tbody>     <!-- tbody태그는 생략 가능 → table태그의 직속 후손은 tbody밖에 없다. -->
+            <tr>
+                <th>이름</th>
+                <th>성별</th>
+            </tr>
+            <tr>
+                <td>신예원</td>
+                <td>여자</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

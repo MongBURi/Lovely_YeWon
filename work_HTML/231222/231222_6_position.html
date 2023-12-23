@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231222_2시_포지션 속성</title>
+    <style>
+        /* ◆ position 속성 :: 위치, 좌표(x, y축)
+            → 이 속성을 통해서, 요소 위치(좌표값)를 부여하는 방법을 지정한다. */
+
+        /* ◇ position: static (정적인, 디폴트값)
+            웹사이트 상 (0,0)부터 시작해서, 주어진 요소들을 순서대로 그냥 붙여둠.
+            (좌표 지정값이 안 먹힌다) */
+        /* ◇ position : relative (상대적인)
+            본래 있어여 할 좌표를 (0,0)으로 삼으며, 그 기점으로 좌표 이동. */
+        /* ◇ position: fixed (고정적인) → 부모 태그의 눈치를 안 봄.(div, span에 감싸져 있더라도)
+            다른 태그의 위치와 상관없이, 브라우저 상 정해진 위치에 있음.
+            (스크롤을 내려도 본래 자리에 위치한다)*/
+        /* ◇ position: absolute (절대적인) → 부모 태그 안에서만 절대 좌표를 갖는다.
+            (스크롤 내리거나 올리면서 부모 태그가 시야 밖에 있다면 같이 없어진다)*/
+        
+        div {
+            height: 1000px;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            position: fixed;
+        }
+
+        #red {
+            background-color: red;
+            /* The position: static property prevents left from having an effect.
+                포지션 속성이 static이면 x,y값 안 먹힌다. 
+                → "position: relative;"" 추가해서 해결. */
+        }
+        #green {
+            background-color: green;
+            left: 50px;     /* left :: x축 값 */
+            top: -50px;     /* top :: y축 값*/
+        }
+        #blue {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <p id="red"></p>
+    <p id="green"></p>
+    <p id="blue"></p>
+
+</body>
+</html>

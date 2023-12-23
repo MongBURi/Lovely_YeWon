@@ -1,0 +1,12 @@
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\bin\Debug\231031_HelloCShap04_chap06.exe.config
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\bin\Debug\231031_HelloCShap04_chap06.exe
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\bin\Debug\231031_HelloCShap04_chap06.pdb
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\231031_HelloCShap04_Fibonacci.csproj.AssemblyReference.cache
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\_231031_HelloCShap04_chap06.Form1.resources
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\_231031_HelloCShap04_chap06.Properties.Resources.resources
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\231031_HelloCShap04_Fibonacci.csproj.GenerateResource.cache
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\231031_HelloCShap04_Fibonacci.csproj.CoreCompileInputs.cache
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\231031_HelloCShap04_chap06.exe
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\231031_HelloCShap04_chap06.pdb
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\_231031_HelloCShap04_chap06.Form2.resources
+D:\work_CShap\231031_HelloCShap04\231031_HelloCShap04_chap06\obj\Debug\_231031_HelloCShap04_chap06.Form3.resources

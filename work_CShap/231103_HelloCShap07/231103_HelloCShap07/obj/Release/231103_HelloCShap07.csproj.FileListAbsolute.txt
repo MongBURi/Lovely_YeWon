@@ -1,0 +1,10 @@
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\bin\Release\231103_HelloCShap07.exe.config
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\bin\Release\231103_HelloCShap07.exe
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\bin\Release\231103_HelloCShap07.pdb
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\obj\Release\231103_HelloCShap07.csproj.AssemblyReference.cache
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\obj\Release\_231103_HelloCShap07.Form1.resources
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\obj\Release\_231103_HelloCShap07.Properties.Resources.resources
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\obj\Release\231103_HelloCShap07.csproj.GenerateResource.cache
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\obj\Release\231103_HelloCShap07.csproj.CoreCompileInputs.cache
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\obj\Release\231103_HelloCShap07.exe
+D:\work_CShap\231103_HelloCShap07\231103_HelloCShap07\obj\Release\231103_HelloCShap07.pdb

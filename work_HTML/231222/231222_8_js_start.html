@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231222_3시_자바스크립트</title>
+</head>
+<body>
+    <h1>안녕 자바스크립트</h1>
+
+    <script>
+        // 자바스크립트 구문
+        // 주석은 이렇게
+        // 보통 <script> 태그는 <body> 최하단에 위치 시킨다.(관습)
+
+        // alert() :: 알림창 또는 경고창 출력(일종의 출력문)
+        alert("안녕하세요.❤");
+
+        // console.log() :: 콘솔 상 출력
+        console.log("검사창에서만 볼 수 있음.");
+        
+        // 자료형 :: number(정수/소수 안 나눔), String(문자/문자열 안 나눔), boolean
+        // typeof() :: 특정 값의 타입을 반환
+
+        // "str"+"ing" = "string"
+        // "string"[1] = "t"
+        // "string".length = 6
+
+        // "===" :: "같다"
+
+        console.log("17 + 30의 값은 " + (17 + 30) + "입니다.");
+        console.log(`17 + 30의 값은 ${17 + 30}입니다.`);
+
+        // ◆ 상수(const)와 변수(let, var)
+        // ◇ 차이점 :: 상수는 값 변경x, 변수는 값 변경o.
+        // ★ 자바스크립트의 경우, 초기화하는 값에 따라 타입을 자동으로 부여함.
+        // [타입명] [변수명] = [값];
+        // const [타입명] [변수명] = [값];
+
+        // ex) a = 1;  // 자동으로 number타입
+
+        let num = 5;    // 5라는 값이 들어감과 동시에, number타입으로 선언된다.
+        console.log(typeof(num));
+        const st = "안녕하세요.";   // "안녕하세요."라는 값이 들어감과 동시에, string타입으로 선언된다.
+        console.log(typeof(st));
+
+        num = 10;
+        st = "안녕!";
+
+        // 입력문 :: prompt(), confirm()
+
+    </script>
+</body>
+</html>
