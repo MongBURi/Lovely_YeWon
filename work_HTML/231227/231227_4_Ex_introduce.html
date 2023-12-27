@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231227_12시_연습문제 풀이</title>
+</head>
+<body>
+    <script>
+        let name = prompt("이름을 입력하세요.", "ex) 홍길동");
+        let input = prompt("나이를 입력하세요.", "ex) 20");     // string형
+        let age = Number(input);
+        let tf = confirm("남성이라면 확인, 여설이라면 취소를 눌러주세요.");
+
+        // 성별의 참/거짓에 따라 gender변수에 삽입
+        let gender;
+        if (tf === true) {  // tf === true("확인"를 누른 경우)
+            gender = "남성";
+        }
+        else {              // tf === false("취소"를 누른 경우)
+            gender = "여성";
+        }
+
+        // 2. 배열을 선언하고, 값을 삽입
+        let introduce = [];
+        introduce.push(name);
+        introduce.push(age);
+        introduce.push(gender);
+
+        // 3. 배열값 순차적으로 출력
+        document.write(`이름: ${introduce[0]}<br>`);
+        document.write(`나이: ${introduce[1]}세<br>`);
+        document.write(`성별: ${introduce[2]}<br>`);
+        
+        // console.log() :: 콘솔창에서 출력 → 개행("\n")
+        // document.write() :: HTML <body>에서 출력 → 개행("<br>")
+
+    </script>
+
+</body>
+</html>

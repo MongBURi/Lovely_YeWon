@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231227_2시_연습문제</title>
+</head>
+<body>
+    <p>
+        (innerHTML) 
+        <span id="n1">숫자1</span>
+        <span id="y">연산자</span>
+        <span id="n2">숫자2</span>
+         = <span id="r">결과값</span>        
+    </p>
+
+    <script>
+        // 문제)
+        // 함수를 활용하여 계산기 프로그램을 구현하라.
+        // - 입력은 함수 밖에서 수행하기. (숫자 2개, 연산자 1개)
+        // - 각 사칙연산(5개)을 수행하는 함수를 구현하고
+        //   입력 받은 연산자에 따라 함수의 반환값을 받아 출력 수행.
+        // - 숫자 2개를 0 0을 입력 받을 때까지 사칙연산 반복 수행.
+        // (입출력 모두 함수 밖에서 수행하고, 연산만 함수를 통해 수행)
+
+        while (true) {
+                let input1 = prompt("첫 번째 숫자를 입력하세요.");
+                let num1 = Number(input1);
+                let input2 = prompt("두 번째 숫자를 입력하세요.");
+                let num2 = Number(input2);
+                let yeon = prompt("연산자를 입력하세요.", "ex) +, -, *, /, %");
+                let result = Number(sic(num1, num2, yeon));    
+
+                if (num1 != 0 && num2 != 0) {                    
+                    alert(`결과값: ${num1} ${yeon} ${num2} = ${result}`);
+                }
+                else {
+                    alert("0이 아닌 숫자를 입력하세요.");
+                    //break;
+                }
+            }
+        
+        alert(`결과값: ${num1} ${yeon} ${num2} = ${result}`);
+        document.write(`결과값: ${num1} ${yeon} ${num2} = ${result}`);
+
+        // innerHTML 활용
+        let element1 = document.getElementById("n1");
+        element1.innerHTML = num1;
+        let element2 = document.getElementById("n2");
+        element2.innerHTML = num2;
+        let element3 = document.getElementById("y");
+        element3.innerHTML = yeon;
+        let element4 = document.getElementById("r");
+        element4.innerHTML = sic(num1, num2, yeon);
+        
+
+        // 함수
+        function sic(n1, n2, y) {
+            if (y === "+") {                
+                return n1 + n2;;
+            }
+            else if (y === "-") {
+                return n1 - n2;;
+            }
+            else if ( y === "*") {
+                return n1 * n2;;
+            }
+            else if (y === "/") {
+                return n1 / n2;;
+            }
+            else {
+                return n1 % n2;;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

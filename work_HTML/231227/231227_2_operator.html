@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231227_10시_연산자</title>
+</head>
+<body>
+    <script>
+        // ◆ 산술연산자 :: +, -, *, /, %
+        // ◆ 대입연산자 :: =
+        // ◆ 비교연산자 :: <, >, <=, >=
+        //                 "=="(값이 같다), "!="(값이 다르다)
+        //                 "==="(값과 타입이 모두 같다), "!=="(값 또는 타입이 다르다)
+        // ◆ 논리연산자 :: &&, ||, !
+        // ◆ 삼항연산자 :: ? (if, else의 역할을 같이 해줌)
+        let n1 = 100;
+        let n2 = 200;
+        // n1이 n2보다 크다면? n1을 출력하라, 아니라면 n2를 출력하라.
+        // [조건식] ? [참일 대 수행할 명령어] : [거짓일 때 수행할 명령어]
+        n1 > n2 ? console.log(n1) : console.log(n2);
+        // n2가 더 크기 때문에(거짓) "200(n2)"이 출력된다.
+
+        // ◆ typeof() :: (연산자 중 하나이다)특정값의 자료형을 반환한다.
+        document.write("n1의 자료형은 " + typeof(n1) + "입니다.");
+        document.write(`n1의 자료형은 ${typeof(n1)}입니다.`);
+
+        let tf = (10 * 0) === 0;
+        document.write(`"10×0 === 0" 타입은 ${typeof(tf)}입니다.`);
+
+        // ◆ 강제 형변환 :: Number(), String(), Boolean()
+        // 기존 방법 :: (int,char,double) [값]
+        let hello = "안녕!";            // hello 변수가 자동으로 string형이 된다.
+        console.log(Boolean(hello));   // Boolrean형태로 강제 형변환
+        console.log(Number('A'));      // 어떤 문자에 대해 숫자(아스키코드)로 바꾸고 싶다.(NaN뜸)
+        // NaN :: "Not a Number" → 숫자 연산이 잘 이루어지지 않았을 때 나타남. 
+        console.log(typeof(Number('A')));   // number타입 뜸.
+
+    </script>
+
+</body>
+</html>

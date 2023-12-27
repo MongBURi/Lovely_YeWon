@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231227_11시_연습문제</title>
+</head>
+<body>
+    <script>
+        // 문제)
+        // 이름, 나이, 성별(Boolean) 입력 받고
+        // 이들을 하나의 배열에 저장한다.
+        // 그리고 배열에 저장된 값들을 순차적으로 HTML에 출력한다.
+
+        // ex) 이유나 25 입력, "취소" 클릭
+        // 이름: 이유나
+        // 나이: 25세
+        // 성별: 여성
+
+        let name = prompt("이름을 입력하세요.", "ex) 홍길동");
+        let num = prompt("나이를 입력하세요.", "ex) 20");
+        let age = Number(num);
+        let gender = confirm("남성이면 확인, 여성이면 취소를 눌러주세요.");
+
+        let introduce = [];
+        introduce.push(name);
+        introduce.push(age);
+        introduce.push(gender);
+
+        if (gender === true) {
+            document.write(`이름: ${introduce[0]}<br>`);
+            document.write(`나이: ${introduce[1]}세<br>`);
+            document.write("성별: 남성");
+        }
+        else {
+            document.write(`<p>이름: ${introduce[0]}</p>`);
+            document.write(`<p>나이: ${introduce[1]}세</p>`);
+            document.write("성별: 여성");
+        }
+
+    </script>
+    
+</body>
+</html>
