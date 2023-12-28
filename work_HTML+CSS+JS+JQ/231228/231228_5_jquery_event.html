@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>231228_12시+2시_제이쿼리 이벤트</title>
+</head>
+<body>
+    <p id="pTag">Jquery Test</p>
+    <p>예원이를 눌러 빨개지기</p>
+    <p>예원이를 두 번 눌러 은둔모드 발동</p><hr>
+
+    <h3 style="display:inline-block">예원이에게 마우스 들이대기</h3><hr><br>
+
+    <label>포커스 테스트용</label><br>
+    <input type="text" />
+    
+    <script>
+        // 이벤트 :: 동작에 대한 행동 서술.
+
+        // click :: 한 번 클릭했을 때
+        $(document).ready(function() {
+            $("p").click(function() {
+                $(this).css('color', "red");
+                $(this).text("한 번 더 눌러줭❤");
+            })
+        })
+
+        // dblclick :: 더블 클릭했을 때
+        $(document).ready(function() {
+            $("p").dblclick(function() {
+                $(this).hide();     // hide()를 통해 사라짐
+                alert("예원이가 사라졌따...!");
+            })
+        })
+
+        // // mauseenter() :: 커서를 요소에 갖다댔을 때
+        // $(document).ready(function() {
+        //     $("h3").mouseenter(function() {
+        //         document.write("h3에 마우스가 들어왔습니다...!");
+        //     })
+        // })
+
+        // 2개의 행동을 정의할 수 있다.
+        // hover() :: 커서의 위치에 따른 행동을 정의(마우스를 갖다댔을 때, 뺐을 때)
+        $(document).ready(function() {
+            $("h3").hover(function() {      // 마우스 갖다댔을 때 행동 정의
+                console.log("h3에 마우스가 들어왔습니다...!");
+            }, 
+            function() {    // 마우스를 뺐을 때 행동 정의
+                console.log("h3에서 마우스가 떠납니다...!");
+            })            
+        })
+
+        // focus() :: 
+        $(document).ready(function() {
+            $("[type=text]").focus(function() {     // 포커싱이 되었을 때
+                $(this).css('background-color', "green");
+            }),
+            $("[type=text]").blur(function() {     // 포커싱를 잃었을 때
+                $(this).css('background-color', "gray");            
+            })            
+        })
+
+
+    </script>
+    
+</body>
+</html>

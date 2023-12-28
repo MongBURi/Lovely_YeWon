@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>231228_2시_연습문제</title>
+</head>
+<body>
+    <!-- 문제)
+        * 버튼 태그 2개와 본문 태그 하나를 생성한다.
+        hide 버튼을 누르면 아래 본문이 사라지면서 알림창을 띄우기
+        show 버튼을 누르면 아래 본문이 사라지면서 알림창을 띄우기
+        단, 숨기거나 보여줄 때 시간을 두고 자연스럽게 이루어지도록 하여라.
+        (여기까지 다 하였다면, 하나의 버튼으로 hide/show를 모두 할 수 있도록 하여라) -->
+   
+    <label for="hideseek">숨기기/나타내기</label><br>
+    <input id="hideseek" type="button" value="눌러줘❤" /><br><hr>
+
+    <label for="hide">숨기기</label><br>
+    <input id="hide" type="button" /><br><hr>
+    <label for="show">나타내기</label><br>
+    <input id="show" type="button" /><br><hr>
+
+    <h1>
+        내 이름은 예원, 백수죠.
+    </h1>
+
+    <script>
+        // hide&show 버튼
+        $(document).ready(function() {
+            $("#hideseek").click(function() {
+                $("h1").fadeToggle(1000, function() {
+                    if ($(this).is(":visible")) {
+                        alert("본문이 나타났습니다...!");
+                    }
+                    else {
+                        alert("본문이 사라졌습니다...!");
+                    }
+                })
+            })
+        })
+
+        // hide 버튼
+        $("#hide").click(function() {
+            $("h1").fadeOut(1000, function() {
+                $("h1").hide();
+                alert("본문이 사라졌습니다...!");                
+            })
+        });
+
+        // show 버튼
+        $("#show").click(function() {
+            $("h1").fadeIn(1000, function() {
+                $("h1").show();
+                alert("본문이 나타났습니다...!");                
+            })
+        });
+
+    </script>
+    
+</body>
+</html>

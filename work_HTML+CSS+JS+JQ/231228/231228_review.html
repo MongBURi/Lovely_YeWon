@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html 코드작성-->
+    <p id="pTag">변경전입니다.</p>
+    <script>
+        //자바스크립트 코드 작성하면 됌
+
+        //출력문 4가지
+        //1. alert() : 경고창/알림창 출력
+
+        //2. console.log() :콘솔 상 출력문
+        //3. document.write() :html에 즉시 출력
+        //4. innerHTML : 직접출력x, html 특정 요소값 변경해서 출력
+                //document.getElemenByID("Id값")
+        let p=document.getElementById("pTag")
+        p.innerHTML="변경한뒤입니다."
+
+        //자료형 : number, string, boolean
+        //강제형변환 : Number(), String(), Boolean()
+
+        //변수, 상수 : let, const
+
+        //입력문 prompt(), confirm()
+        //prompt() : 문자를 입력받음(숫자 입력에도 사용됨)
+        //confirm() : true, false 입력받음 (확인/취소 선택지 주어짐)
+        let name=prompt("이름 입력","ex)최효정")
+        let input=prompt("나이 입력")
+        let age=Number(input)
+        confirm("이대로 진행하시겠습니까?")
+        
+        //배열 : 여러가지의 값을 하나의 이름으로 저장하는 공간
+        //js 배열 같은 경우엔, 다른 타입이어도 하나의 이름으로 저장 가능
+        let fruit=[];
+        //fruit[2]='banana';
+        fruit.push("banana");
+        fruit.push("apple");
+
+        let student=["최효정", 28, true, 'A']
+        let stu=Array["최효정", 28]
+        let stud = new Array("최효정", true, 'A')
+    </script>
+</body>
+</html>

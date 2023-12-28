@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>231228_3시_연습문제 풀이</title>
+</head>
+<body>
+    <!-- 버튼 태그 2개, 본문 태그 하나 생성 -->
+    <button id="hide">숨기기</button>       <!-- <input>태그의 버튼 타입도 있지만 -->
+    <button id="show">나타내기</button>     <!-- <button>자체 태그도 있음 -->
+    <button id="toggle">토글토글</button>
+    <br><hr>
+
+    <p>내 이름은 예원, 백수죠.<br></p>
+    <p>범인은 이 안에 있어!</p>
+    
+    <script>
+        // 하나의 버튼으로, hide 및 show 모두 할 수 있도록 하기.
+        $(document).ready(function() {
+            $("#toggle").click(function() {
+                $("p").toggle(1000);
+            })
+        })
+
+        // 숨기는 버튼 기능 생성.
+        $(document).ready(function() {      // 다 읽었다면
+            $("#hide").click(function() {   // #hide 요소를 클릭하면
+                alert("본문이 사라졌습니다...!");
+                $("p").hide(1000);
+            })
+        })
+
+        // 나타내는 버튼 기능 생성.
+        $(document).ready(function() {
+            $("#show").click(function() {
+                alert("본문이 나타났습니다...!");
+                $("p").show(1000);
+            })
+        })
+        
+    </script>
+    
+</body>
+</html>

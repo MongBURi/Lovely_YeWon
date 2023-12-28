@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 파일로 적용하는 방법 ↓↓↓ -->
+    <!--<script src="/jquery-3.7.1.min.js"></script> 다른 위치 -->
+    <!--<script src="jquery-3.7.1.min.js"></script> 같은 위치(폴더) -->
+
+    <!-- 링크로 적용하는 방법 ↓↓↓ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>231228_11시&12시_제이쿼리 시작</title>
+</head>
+<body>
+    <p id="pTag">Jquery Test</p>
+    <p>예원이를 눌러 은둔모드 발동</p>
+    <p>예원이를 눌러 동굴에 숨기</p>
+    
+    <script>
+        // jquery :: JavaScript 보조.(자바스크립트 코드 간략화)
+
+        // 첫 번째 jq(스타일 적용)
+        $(document).ready(function() {  // 웬만해서 고정으로 적어줄 것.
+                                        // 필요에 따라서 ready가 아닌 다른 함수를 쓸 수 있음.
+
+            // "HTML 문서를 완전히 불러오고 난 뒤에, 실행할 내용 서술"
+            $("#pTag").css('background-color', 'red');
+        })
+
+        // 두 번째 jq(클릭했을 때)
+        $(document).ready(function() {           // "HTML 문서를 완전히 불러오고"
+            $("p").click(function() {            // "p태그를 클릭하면"
+                $(this).css('color', "white");   // "글자를 하얀색으로 바꾸기"
+                $(this).css('background-color', "black");   // +배경을 검정색으로 바꾸기
+            })
+        })
+
+        $(document).ready(function() {      // p태그를 클릭했을 때 사라지게 하기
+            $("p").click(function() {
+                $(this).hide();
+            })
+        })
+
+        // $ :: "접근한다."
+        // $(선택자).동작함수();
+
+        // 태그/아이디/클래스 선택자, ... (요 3가지 주로 사용)
+
+    </script>
+
+</body>
+</html>

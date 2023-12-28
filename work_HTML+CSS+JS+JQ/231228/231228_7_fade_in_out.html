@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>231228_4시_fadeIn&Out</title>
+</head>
+<body>
+    <p id="title">제목입니다. 한 번 클릭해보세요.</p><hr>
+
+    <button id="stop">멈추기 버튼</button><hr>
+
+    <p id="para">
+        아래는 본문입니다.<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur ipsum omnis animi nobis, nam, illum debitis inventore vitae exercitationem deleniti itaque cumque unde, distinctio eos voluptatem dolorem ea nisi.
+    </p>
+
+    <script>
+        // 멈추기 버튼
+        $(document).ready(function() {
+            $("#stop").click(function() {
+                $("#para").stop();
+            })
+        })
+
+        // 스타일 지정
+        $(document).ready(function() {
+            $("#title").css('background-color', "gray");
+            $("#title").css('color', "white");
+            $("#para").css('background-color', "lightgray");
+            $("#para").css('display', "none");      // 실행했을 때 안 보이게 함
+        })
+
+        // fadeOut() :: 자연스럽게 사라지는 모션
+        // $(document).ready(function() {
+        //     $("#title").click(function() {
+        //         $("#para").fadeOut();
+        //     })
+        // })
+
+        // fadeIn() :: 자연스럽게 나타나는 모션
+        // $(document).ready(function() {
+        //     $("#title").click(function() {
+        //         $("#para").fadeIn();
+        //     })
+        // })
+
+        // slide/fadeToggle() :: 자연스럽게 숨기고 나타나게 하는 모션
+        $(document).ready(function() {
+            $("#title").click(function() {
+                $("#para").slideToggle(3000);
+            })
+        })
+    </script>
+    
+</body>
+</html>
