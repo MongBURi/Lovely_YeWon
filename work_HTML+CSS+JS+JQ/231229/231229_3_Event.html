@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231229_12시_js이벤트</title>
+</head>
+<body>
+    <!-- 이벤트 적용에 사용되는 HTML속성 :: onclick, ondblclick, onmouseenter -->
+    <!-- on을 넣어주기만 하면 된다 -->
+    <button ondblclick="alert('더블클릭 했습니다.')">두 번 눌러보세용</button>
+    <button onclick="clicker()">한 번 눌러보세용</button>
+    <p id="text"></p>
+    <hr><br>
+    <button id="para_button">이벤트 리스너 등장</button>
+    <p id="para" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo omnis delectus cumque? Ex rerum officia beatae eveniet ratione accusamus, cumque minima nihil asperiores in iusto nobis dicta optio, quam soluta.</p>
+
+    <script>
+        // 자바스크립트로 이벤트
+        // 1) 함수로 행동을 정의하고 + HTML 속성으로 등록한다.
+        function clicker() {
+            alert("버튼을 클릭 했습니다.");
+
+            // innerHTML 활용(축약)
+            document.getElementById("text").innerHTML="텍스트 등장!";
+        }
+
+        // 2) "이벤트 리스너" 사용 :: 이벤트가 발생했을 때, 그 처리를 담당하는 함수.
+        let bt = document.getElementById("para_button");
+
+        // ("이벤트명", 실행할 함수)
+        // +) 여러 개의 행동을 정의할 때 함수를 활용, 아니면 매개변수에 선언해도 됨.
+        bt.addEventListener("click", show);   // 무엇을 했을 때, 무엇을 할 건지
+        function show() {
+            let para = document.getElementById("para");
+            para.style.display="block";     // "block" :: none과 반대
+        }
+    </script>
+    
+</body>
+</html>
