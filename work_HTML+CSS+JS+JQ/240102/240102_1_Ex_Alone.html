@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_9시_연습문제</title>
+</head>
+<body>
+    <button>눌러줭</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe voluptate, autem blanditiis corporis tenetur, iste obcaecati sit odit provident rem quidem praesentium odio unde, vero necessitatibus! Dolorem, ea veritatis?</p>
+
+    <script>
+        // 문제)
+        // 버튼을 클릭하면 이미 DOM(document)에 나타나있는 본문에 slide 효과를 주어
+        // 본문을 사라지게 했다가 드라나게 하라.
+        // 그리고 경고창을 띄워 버튼을 클릭했음을 알리어라.
+        // 단, 위 이벤트를 진행하는 구문을 한문장으로 표현하세요.
+        // (본문을 불러오는 선택자를 한 번만 사용하기)
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").slideUp(1000, function() {
+                    $("p").slideDown(1000, function() {
+                        alert("버튼을 클릭했습니다.");
+                    })
+                })
+            })
+        })        
+
+    </script>
+    
+</body>
+</html>

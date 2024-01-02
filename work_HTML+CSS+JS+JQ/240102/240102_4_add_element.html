@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_11시_요소 추가</title>
+</head>
+<body>
+    <button id="add">요소 추가</button>
+    <div id="para"></div>
+    <br><hr>
+
+    <button id="add_list">append로 추가</button>      <!-- append() 사용 -->
+    <button id="add_after">after로 추가</button>      <!-- after() 사용 -->
+    <ol id="list">
+        여기가 ol 위치
+        <li>0. 원래 있는 li</li>
+    </ol> 
+
+    <script>
+        // 요소 추가 :: append(), prepend(), after(), before()
+
+        // append() :: 지정된 태그 안에, 가장 뒤에서부터 요소 추가(권장)
+        // prepend() :: 지정된 태그 안에, 가장 앞에서부터 요소 추가
+        // after() :: 지정된 태그 뒤로 요소 추가
+        // before() :: 지정된 태그 앞으로 요소 추가
+
+        let index = 0;      // 어펜드/프리펜드 구분을 위한 인덱스
+        let i = 0;
+
+        $(document).ready(function() {
+            $("#add").click(function() {
+                // append() :: 추가하겠다
+                $("#para").append(`<p>${index + 1}. p 태그가 추가되었습니다.</p>`);
+                index++;    // 인덱스 갱신
+            })
+
+            // append()와 after() 비교
+            $("#add_list").click(function() {
+                $("#list").append(`<li>${i + 1}번째 li가 추가되었습니다.</li>`);
+                i++;
+                // <ol> 태그 안에서 추가됨
+            })
+            $("#add_after").click(function() {
+                $("#list").after(`<li>li 추가</li>`);
+                // <ol> 태그 바깥에 추가됨
+            })
+
+        })
+
+    </script>
+    
+</body>
+</html>

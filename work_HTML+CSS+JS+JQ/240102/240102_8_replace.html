@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_4시_요소 대체</title>
+</head>
+<body>
+    <!-- 클래스명(다른부분, 공통부분) → 요소 대체 이해를 돕기 위해 -->
+    <p class="first p" id="replace">1. 대체될 내용</p>
+    <p class="second p">2. 변경될 내용</p>
+    <p class="third p">3. 변경될 내용</p>
+    <button id="all">replaceAll 버튼</button>
+    <button id="with">replaceWith 버튼</button>
+
+    <script>
+        // 요소 대체 :: replaceAll(), replaceWith()
+        // replaceAll()
+        $(document).ready(function() {
+            $("#all").click(function() {
+                // replaceAll(".p")로 선택된 요소를 #replace로 대체하겠다
+                $("#replace").replaceAll(".p");
+            })
+            $("#with").click(function() {
+                // 선택된 p태그 → #replace로 선택된 p태그 하나로 대체된다.
+                $("#replace").replaceWith($(".p"));
+                // ()안에 선택자 jq문으로 작성해야 됨
+            })
+        })
+
+    </script>
+    
+</body>
+</html>

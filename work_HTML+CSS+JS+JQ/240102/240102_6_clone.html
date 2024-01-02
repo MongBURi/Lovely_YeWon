@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_3시_요소 삭제</title>
+</head>
+<body>
+    <h3>요소 복제 :: clone()</h3>
+    <button id="clone">요소 복제하기 버튼</button>
+    <ul id="list">
+        <li id="first">첫 번째 li입니다.</li>   <!-- script 태그의 app 값 -->
+        <li>두 번째 li입니다.</li>
+        <!-- 복사한 첫 번째 li를 이 뒤로 계속 붙여넣기 됨 -->
+    </ul>
+
+    <script>
+        // 요소 복제 :: clone()
+        $(document).ready(function() {
+            $("button").click(function() {
+                // #퍼스트 부분을 통째로 복사해서, appendTo()로 붙여넣기.
+                // $("#first").clone().appendTo("ul");
+
+                // append() 사용할려면 이렇게
+                let app = $("#first").clone();
+                $("#list").append(app);
+            })
+        })
+
+    </script>
+    
+</body>
+</html>

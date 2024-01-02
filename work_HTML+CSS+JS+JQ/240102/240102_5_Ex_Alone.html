@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_12시_연습문제</title>
+</head>
+<body>
+    <button id="bt">학생 정보 출력하기</button>
+    <ul id="list"></ul>
+
+    <script>
+        // 문제)
+        // 5개의 값(이름, 나이, 성별, 혈액형, 키)을 입력 받고
+        // 입력값들로 학생 객체를 만들어라.
+
+        // 버튼을 입력하면, 목록 태그를 통해 객체의 값(key, value 모두)들을 출력하고
+        // 5개의 값을 모두 출력한 뒤 버튼을 클릭할 때엔,
+        // 데이터가 없음을 사용자에게 알리도록 한다.
+
+        // 객체 생성
+        let student = {
+            name: "",
+            age: 0,
+            gender: "",
+            blood: "",
+            height: 0            
+        };
+        
+        student.name = prompt("이름을 입력하세요.", "ex) 홍길동");
+        student.age = Number(prompt("나이를 입력하세요.", 10));
+        student.gender = prompt("성별을 입력하세요.", "ex) 여성");       
+        student.blood = prompt("혈액형을 입력하세요.", "ex) A");
+        student.height = Number(prompt("키를 입력하세요.", "ex) 160"));
+
+        let key = Object.keys(student);     // 객체를 배열에 담음
+        let index = 0;
+
+        $(document).ready(function() {
+            $("#bt").click(function() {
+                let count = key[index];     // count = 객체key값
+                if(key.length > index) {    // 배열의 인덱스값이 index보다 클 때
+                    $("#list").append(`<li>${count}: ${student[count]}</li>`);
+                    index++;
+                }
+                else {
+                    alert("출력할 정보가 없습니다.");
+                }
+            })
+        })            
+
+    </script>
+    
+</body>
+</html>

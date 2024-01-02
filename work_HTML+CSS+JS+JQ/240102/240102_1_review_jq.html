@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_9시_jq 복습</title>
+</head>
+<body>
+    <button>slide 효과 적용</button>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab possimus repellat ex dolorem nihil hic consectetur? Accusamus perferendis atque ex magnam odio iste eius, vero, explicabo ducimus id corrupti aspernatur?
+    </p>
+
+    <script>
+        // 문제)
+        // 버튼을 클릭하면 이미 DOM(document)에 나타나있는 본문에 slide 효과를 주어
+        // 본문을 사라지게 했다가 드라나게 하고 경고창을 띄워라.
+        // 단, 본문을 불러오는 선택자를 한 번만 사용하라.
+
+        // 콜백 함수 :: 전환/애니메이션 실행하고 난 뒤에 후처리하는 데에 사용.
+        // 연쇄(chaining) :: 이벤트 처리를 연결한다.
+
+        $(function() {      // "(document).ready" 생략 가능
+            $("button").click(function() {
+                // 연달아서 이벤트 효과 주기(연쇄)
+                $("p").slideUp(1000).slideDown(1000, function() {   // 콜백 함수 위치(후처리)
+                    // 한 가지 이벤트라 function() 생략 가능
+                    alert("버튼을 클릭했습니다.");
+                    
+                // $("p").slideUp(1000).slideDown(1000, () => {}    // 람다식 활용할 때
+                })
+            })
+        })
+
+    </script>
+
+</body>
+</html>

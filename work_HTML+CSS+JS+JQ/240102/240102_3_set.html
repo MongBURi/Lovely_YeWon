@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_10시_DOM조작:set</title>
+</head>
+<body>
+    <h3>text()와 html()</h3>
+    <p id="para">이 요소는 값이 변경될 예정입니다.</p>
+    <button id="change">Text 변경하기</button>
+    <br><br>
+    <button id="change_html">HTML 변경하기</button>
+    <br><br><hr>
+
+    <h3>val()</h3>
+    <input type="text" /><br><br>
+    <button id="change_value">입력값 설정</button>
+    <br><br><hr>
+
+    <h3>attr()</h3>
+    <a href="https://www.w3schools.com/">w3school 사이트 접속</a><br><br>
+    <button id="change_attr">하이퍼링크 변경</button>
+
+    <script>
+        // 2. set :: "설정하다"
+        $(document).ready(function() {
+            $("#change").click(function() {
+                $("#para").text("요소값을 이미 변경하였습니다.");
+                // text의 ()안에 값을 넣어주느냐 안 넣어주느냐에 따라 get/set 나뉨
+            })
+            $("#change_html").click(function() {
+                $("#para").html('<span style="color:red">changed text</span>');
+            })
+            $("#change_value").click(function() {
+                $("input").val("예원이가 세상을 지배하다.");
+                $("input").css("color", "red");
+            })
+            $("#change_attr").click(function() {
+                // attr(어떤 속성을 변경할지, 어떤 걸로 변경할지)
+                $("a").attr("href", "https://tcpschool.com/");
+                $("a").text("tcp school 사이트 접속");
+            })
+        })
+
+    </script>
+    
+</body>
+</html>

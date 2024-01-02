@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240102_4시_요소 삭제</title>
+
+    <style>
+        #parent {
+            background-color:bisque;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>요소 삭제 :: remove(), empty(), detach()</h3>
+    <div id="parent">
+        <div id="first">첫 번째 내용</div>
+        <div id="second">두 번째 내용</div>
+        <div id="third">세 번째 내용</div>
+    </div>
+    <button id="remove">요소 삭제하기(R) 버튼</button>
+    <button id="empty">요소 비우기(E) 버튼</button>
+    <button id="rewind">요소 복구(D) 버튼</button>
+
+    <script>
+        // 요소 삭제 :: remove(), empty(), detach()
+
+        // remove() :: 특정 조건에 적합한 요소를 삭제한다. (변수에 담아도 반환x)
+        // $(document).ready(function() {
+        //     $("#remove").click(function() {
+        //         $("div").remove("#first");  // div 태그 중 아이디가 #first인 div만 삭제
+        //         // 선택자를 통해 삭제할 수도 있고, remove()를 통해 추가적으로 조건을 줄 수 있다.
+        //     })
+        // })
+
+        // detach() :: 특정 조건에 적합한 요소를 삭제한다.
+        //             (삭제를 수행한 뒤에, 삭제된 HTML코드를 반환한다.)
+        let data;
+        $(document).ready(function() {
+            $("#remove").click(function() {
+                data = $("#first, #second").detach();
+            })
+            $("#rewind").click(function() {
+                $("#parent").append(data);
+            })
+        })
+
+        // empty() :: 선택된 요소의 자식 요소를 삭제한다.
+        $(document).ready(function() {
+            $("#empty").click(function() {
+                $("#parent").empty();
+            })
+        })
+
+    </script>
+    
+</body>
+</html>

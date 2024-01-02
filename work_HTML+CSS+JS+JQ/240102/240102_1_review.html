@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>240102_9시_js 복습(이벤트 추가)</title>
+</head>
+<body>
+    <!-- HTML요소 이벤트 속성 :: on + "js에서 썼던 이벤트명" -->
+    <button onclick="alert('버튼을 클릭하셨습니다.')">경고창 출력1</button>
+    <!-- onclick에 함수(2개 이상의 이벤트) 추가 -->
+    <button onclick="clickBT()">경고창 출력2</button>
+    <br><br>
+
+    <button id="bt">버튼을 눌러보세요</button>  <!-- bt버튼을 통해 h1 숨기기 -->
+    <h1 id="para">
+        본문입니다.
+    </h1>
+
+    <script>
+        // js로 이벤트 적용하는 방법
+
+        // 1. 요소에 직접적으로 명련문이나 함수 적용
+        // 2개 이상의 이벤트 적용할 때는 함수를 활용한다
+        function clcikBT() {
+            alert("버튼을 클릭하셨습니다.");
+            console.log("버튼을 클릭하셨습니다.");
+        }
+
+        // 2. 이벤트 리스너 사용
+        // ㄱ) 이벤트를 적용할 요소 당겨오기
+        let bt1 = document.getElementById("bt");
+        // ㄴ) 당겨온 요소에 이벤트 리스너 적용 → addEventListener 사용
+        bt1.addEventListener("click", hide);    // 무슨 행동을 했을 때, 무슨 효과를 줄 건지
+        // ㄷ) 이벤트 처리에 사용할 함수 정의
+        function hide() {
+            let para = document.getElementById("para");
+            para.style.display = "none";
+            alert("h1 본문이 숨겨졌습니다.");
+        }
+
+    </script>
+
+</body>
+</html>
