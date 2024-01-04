@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240104_2시_연습문제 풀이</title>
+</head>
+<body>
+    <!-- mbti 4가지 성향 입력 (다이로 타입) -->
+    <input type="radio" name="EI" id="E" value="E">
+    <label for="E">외향적(E)</label>
+    <input type="radio" name="EI" id="I" value="I">
+    <label for="I">내향적(I)</label>
+    <br>
+    <input type="radio" name="SN" id="S" value="S">
+    <label for="S">현실형(S)</label>
+    <input type="radio" name="SN" id="N" value="N">
+    <label for="N">직관형(N)</label>
+    <br>
+    <input type="radio" name="TF" id="T" value="T">
+    <label for="T">이성적(T)</label>
+    <input type="radio" name="TF" id="F" value="F">
+    <label for="F">감성적(F)</label>
+    <br>
+    <input type="radio" name="JP" id="J" value="J">
+    <label for="J">계획적(J)</label>
+    <input type="radio" name="JP" id="P" value="P">
+    <label for="P">즉흥적(P)</label>
+    <br>
+
+    <button id="submit">제출</button>
+    <br>
+    <p id="result"></p>     <!-- 결과값 표시할 공간 -->
+
+    <script>
+        let mbti = "";      // 결과값 저장할 변수 String형으로
+
+        $(document).ready(function() {
+            $("#submit").one("click", function() {  // 버튼을 한 번 눌렀을 때만 이벤트 처리
+                // 사용자 선택에 따라, MBTI 결과값 추출.
+                // "getElementById().checked?"
+                // id가 E인 선택지가 체크가 되었다면(3항 연산자), E추가/아니라면 I추가.
+                mbti += document.getElementById("E").checked ? "E" : "I";
+                mbti += document.getElementById("S").checked ? "S" : "N";
+                mbti += document.getElementById("T").checked ? "T" : "F";
+                mbti += document.getElementById("J").checked ? "J" : "P";
+                console.log(mbti);  // 디버깅
+
+                // json 파일에 있는 mbti 설명을 추출.
+                // ajax 통신 시도
+                $.ajax({
+                    url: "https://starfall-Yuna.github.io/ubiquitous-disco/mbti.json",
+                    method: "GET",
+                    dataType: "json",
+                    // 여기까지 작성하면, 위 양식대로 파일 요청
+
+                    // 여기서부터는 응답 받은 파일을 적절히 활용
+                    success: function(data) {   // data :: 응답 받은 파일
+                        // 현재까지 저장된 mbti값을 인덱스로 사용해서 값을 불러오기
+                        mbti += ": " + data[mbti];  // ex) ISTJ: 현실주의자
+                        document.querySelector("#result").textContent = mbti;
+                    },
+                    error: function(a, b, c) {
+                        console.log("에러 발생!");
+                    }
+                })
+            })
+        })
+    </script>
+    
+</body>
+</html>

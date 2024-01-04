@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jq 링크 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>240104_10시_연습문제</title>
+</head>
+<body>
+    <!-- 문제)
+        1. MBTI의 4가지 성향을 라디오 타입으로 입력 받고
+        각각 선택한 뒤 제출을 누르면 버튼 아래로, MBTI 결과와 설명을 불러오도록 하라.
+        (값 추출이 어렵다면, "getElementById().checked?" 찾아보기)
+        2. 단톡방으로 배포한 json 파일 링크로 시도해보고
+        만약 성공했다면, 각자 계정으로 리포지토리를 생성하여 json 파일을 생성하고 웹호스팅을 수행하여라.
+        (깃허브 웹호스팅은 포폴 제작에도 도움되니 꼭 해볼 것)
+        * MBTI 결과는 사용자 선택값을 토대로 조합하고 설명은 json 파일 링크를 토대로 ajax 통신을 수행하라.
+        (이때... form 태그는 절대 만들지 않고 진행할 것)
+    -->
+    <input type="radio" id="e" name="MBTI1" value="E" />
+    <label for="e">외향적(E)</label> 
+    <input type="radio" id="i" name="MBTI1" value="I" />
+    <label for="i">내향적(I)</label>
+    <br>
+    <input type="radio" id="s" name="MBTI2" value="S" />
+    <label for="s">현실형(S)</label> 
+    <input type="radio" id="n" name="MBTI2" value="N" />
+    <label for="n">직관형(N)</label>
+    <br>
+    <input type="radio" id="t" name="MBTI3" value="T" />
+    <label for="t">이성적(T)</label> 
+    <input type="radio" id="f" name="MBTI3" value="F" />
+    <label for="f">감성적(F)</label>
+    <br>
+    <input type="radio" id="j" name="MBTI4" value="J" />
+    <label for="j">계획적(J)</label> 
+    <input type="radio" id="p" name="MBTI4" value="P" />
+    <label for="p">즉흥적(P)</label>
+    <br>
+    <input type="submit" id="sub" value="제출" />
+    <br>
+    <p id="para"></p>
+
+    <script>
+        $.ajax({
+            url: "https://starfall-Yuna.github.io/ubiquitous-disco/mbti.json",
+            method: "GET",
+            dataType: "json",
+
+            success: function (data) {
+                $(document).ready(function() {
+                    $("#sub").click(function() {
+                        // 선택된 라디오 버튼의 값을 가져오기
+                        let mbti1 = $("input[name='MBTI1']:checked").val();
+                        let mbti2 = $("input[name='MBTI2']:checked").val();
+                        let mbti3 = $("input[name='MBTI3']:checked").val();
+                        let mbti4 = $("input[name='MBTI4']:checked").val();
+
+                        // 가져온 값을 조합하여 데이터를 표시
+                        let MBTI = mbti1 + mbti2 + mbti3 + mbti4;
+
+                        // 결과 출력
+                        let para = $("#para");
+                        para.text(`${MBTI}: ${data[MBTI]}`);                        
+                    })
+                })
+            },
+            error: function (a, b, c) {
+                console.log("에러 발생!!!");
+            }
+        })       
+
+    </script>
+    
+</body>
+</html>
