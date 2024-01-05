@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+
+<!-- jq 링크 연결 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<title>240105_10시_연습문제1</title>
+</head>
+<body>
+	<!-- 1. (jsp 파일 3개 작성)
+		 이름과 나이를 입력받고 나이가 20살 미만일 때에는 kid.sjp로
+		 아니라면 adult.jsp로 이동하게끔 하는 입력폼 작성 -->
+	
+	<form id="myForm" method="get">
+		<label for="name">이름</label> 
+		<input type="text" id="name" name="na" />
+		<br>
+		<label for="age">나이</label> 
+		<input type="text" id="age" name="a" />
+		<br>
+		<input type="submit" id="sub" value="제출하기" />	
+	</form>
+	
+	<script>
+		$(document).ready(function() {
+			$("#myForm").submit(function(event) {
+				event.preventDefault();
+				
+				let age = $("#age").val();
+				
+				if (age < 20) {
+					this.action = "240105_2_Ex1_Alone_kid.jsp";
+				}
+				else {
+					this.action = "240105_2_Ex1_Alone_adult.jsp";
+				}
+				
+				this.submit();
+			})
+		})	
+	</script>	
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>250105_3시_서블릿</title>
+</head>
+<body>
+	<!-- form 태그를 통해서 서블릿을 실행 -->
+	
+	<!-- @WebServlet("/HelloServlet")여서 action="HelloServlet" -->
+	<!-- mrthod를 "get"으로 해서 protected void doGet(~)이 실행됨 -->
+	<form action="HelloServlet" method="get">
+		<label>이름: </label>
+		<input type="text" id="name" name="name"/>
+		<input type="submit" value="GET 실행하기"/>	
+	</form>
+	<hr>
+	<form action="HelloServlet" method="post">
+		<label>이름: </label>
+		<input type="text" id="name" name="name"/>
+		<input type="submit" value="POST 실행하기"/>	
+	</form>
+
+</body>
+</html>

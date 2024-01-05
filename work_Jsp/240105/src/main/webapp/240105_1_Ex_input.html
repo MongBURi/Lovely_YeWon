@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>240105_9시_리뷰1</title>
+</head>
+<body>
+	<!-- jsp :: HTML 코드 안에서 java 문법 작성 가능 -->
+	<!-- 계산기 프로그램 :: 입력(2개 숫자, 1개 연산자)
+		 제출을 누르면, 외부 jsp 파일로 넘어가서 결과값 출력 -->
+	<form action="240105_1_Ex_input.jsp" method="get">
+		<input type="text" id="num1" name="num1" />
+		<select name="op">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" id="num2" name="num2" />
+		
+		<input type="submit" value="제출" />
+	</form>
+
+</body>
+</html>
