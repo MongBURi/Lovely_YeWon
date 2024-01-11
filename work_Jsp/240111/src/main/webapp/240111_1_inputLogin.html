@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>240111_9시_어제 했던 거 추가수정</title>
+</head>
+<body>
+	<h3>아래 정보를 입력하고 제출해주세요.</h3>
+	
+	<!-- 아이디/비번 입력창 중 하나라도 비어있다면, 경고창을 띄울 거임 -->
+	<form method="post" action="confirm" name="Login" onsubmit="check_input()">
+		아이디: <input type="text" id="id" name="id" />	<br>
+		비밀번호: <input type="text" id="pw" name="pw" />	<br>
+		
+		<input type="submit" value="제출하기" />
+	</form>
+</body>
+
+<script>
+	function check_input() {
+		// 아이디 입력란 또는 비밀번호 입력한이 비어있다면,
+		// if (HTML파일의.form태그 네임값의.id입력란의.입력값)
+		if (document.Login.id.value == false || !document.Login.pw.value) {
+				// "false" == "!"
+			alert("아이디와 비밀번호를 모두 입력해주세요.");
+		}
+		
+		// 사용자에게 모두 입력하라고 경고창 띄우기
+	}
+
+</script>
+
+</html>
