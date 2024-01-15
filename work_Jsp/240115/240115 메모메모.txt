@@ -1,0 +1,60 @@
+9시 수업
+ㅡ 파일의 형식이 별도로 정해져 있지 않아서, 전송 방식을 임의로 결정해야 한다
+<form enctype="multipart/form-data">
+
+ㅡ catch문에서
+e.printStackTrace(); 사용 권장
+
+ㅡ 업로드 시 import 추가
+<%@ page import="java.util.*" %>
+<%@ page import="com.oreilly.servlet.MultipartRequest" %>	<!-- 업로드에 필요한 기본적인 객체 -->
+<%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>	<!-- 이름 충돌시 손실 방지 -->
+
+ㅡ " https://servlets.com/cos " 구글에 검색
+lb에 cos.jar 복붙
+
+========== ========== ========== ========== ==========
+10시 수업
+ㅡ 파일 업로드 시 폴더 사라지는 현상 해결(?)
+서버에 sercet.xml 열어서 어쩌구~
+===== ===== ===== ===== 
+ㅡ DB 연동 방법 (Connect 말고 DataSource 사용)
+ㅡ HTML작성 > 서블릿 작성 > 클래스 작성 > 서버.xml 수정
+ㅡ 서버에 url, id, pw, 드라이버 직접 넣어줌
+<Context> 안에 Resource 작성
+    <Resource
+	name = "jdbc/mysql"
+	auth = "Container"
+    	type = "javax.sql.DataSource"
+    	driverClassName = "com.mysql.jdbc.Driver"
+    	url = "jdbc:mysql://localhost:3306/apidb"
+    	username = "root"
+    	password = "1234"
+    />
+</Context>
+
+========== ========== ========== ========== ==========
+11시 수업
+이어서
+import javax.naming.InitialContext;
+import javax.naming.Context;
+ㅡ 생성자 try문 작성
+ㅡ 메소드 insertUser 작성
+===== ===== ===== ===== 
+EL 태그
+문제)
+HTML에서 입력받은 이름, 나이를
+JSP에서 EL 태그를 통해 받아내어 출력을 수행하라.
+getParameter() 쓰지 말고
+
+========== ========== ========== ========== ==========
+12시 수업
+연습문제 풀이
+${param.name} 파람파람파람
+=====
+클래스 → 자바빈 → "DTO(공식명칭)"
+ㅡ DTO 활용해서 출력
+<jsp:sueBean id="user1" class="com.javalex.ex.UserDTO" scope="page" />
+
++)
+JSTL 알아보기
