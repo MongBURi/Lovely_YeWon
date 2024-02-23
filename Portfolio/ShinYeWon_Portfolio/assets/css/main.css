@@ -163,14 +163,14 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 20px 0;
 	}
 
 	h1 {
 		font-size: 2.75em;
 		font-weight: 700;
 		line-height: 1.3;
-		margin: 0 0 1em 0;
+		margin: 0 0 20px 0;
 		letter-spacing: -0.035em;
 	}
 
@@ -293,7 +293,7 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-bottom: solid 1px #c9c9c9;
-		margin: 2em 0;
+		margin: 15px 20px 30px;
 	}
 
 		hr.major {
@@ -2073,6 +2073,7 @@ input, select, textarea {
 			flex-wrap: wrap;
 			width: calc(100% + 3em);
 			margin: -1.5em 0 2em -1.5em;
+			flex-direction: column;
 		}
 
 			form > .fields > .field {
@@ -2089,7 +2090,7 @@ input, select, textarea {
 			}
 
 				form > .fields > .field.half {
-					width: calc(50% - 0.75em);
+					width: calc(80% - 0.75em);
 				}
 
 				form > .fields > .field.third {
@@ -2564,16 +2565,11 @@ input, select, textarea {
 /* Tiles */
 
 	.tiles {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		postiion: relative;
-		margin: -2.5em 0 0 -2.5em;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    	position: relative;
+    	margin: -2.5em 0 0 -2.5em;
 	}
 
 		.tiles article {
@@ -2582,8 +2578,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
-			margin: 2.5em 0 0 2.5em;
+			width: calc(50% - 2.5em);	/* 2개씩 나열하므로 폭을 반으로 조정합니다. */
+			margin: 2.5em 0 0 2.5em;		
 		}
 
 			.tiles article > .image {
@@ -2601,6 +2597,8 @@ input, select, textarea {
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
+					height: 100%;
+    				object-fit: cover; /* 이미지가 영역에 맞게 조절되도록 설정 */
 				}
 
 				.tiles article > .image:before {
@@ -2642,40 +2640,40 @@ input, select, textarea {
 					z-index: 2;
 				}
 
-			.tiles article > a {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
-				align-items: center;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
-				justify-content: center;
-				-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
-				transition: background-color 0.5s ease, transform 0.5s ease;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				padding: 1em;
-				border-radius: 4px;
-				border-bottom: 0;
-				color: #ffffff;
-				text-align: center;
-				text-decoration: none;
-				z-index: 3;
-			}
+				.tiles article > a {
+					display: -moz-flex;
+					display: -webkit-flex;
+					display: -ms-flex;
+					display: flex;
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					-moz-align-items: center;
+					-webkit-align-items: center;
+					-ms-align-items: center;
+					align-items: center;
+					-moz-justify-content: center;
+					-webkit-justify-content: center;
+					-ms-justify-content: center;
+					justify-content: center;
+					-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+					-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
+					-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+					transition: background-color 0.5s ease, transform 0.5s ease;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					padding: 1em;
+					border-radius: 4px;
+					border-bottom: 0;
+					color: #ffffff;
+					text-align: center;
+					text-decoration: none;
+					z-index: 3;
+				}
 
 				.tiles article > a > :last-child {
 					margin: 0;
@@ -2751,7 +2749,7 @@ input, select, textarea {
 			}
 
 		* + .tiles {
-			margin-top: 2em;
+			margin-top: 0.5%;
 		}
 
 		body.is-preload .tiles article {
@@ -2827,9 +2825,9 @@ input, select, textarea {
 		}
 
 /* Header */
-
+	
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 100px 0 10px 0;
 	}
 
 		#header .logo {
@@ -2838,7 +2836,7 @@ input, select, textarea {
 			color: inherit;
 			font-weight: 900;
 			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
+			margin: 0 0 20px 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -3165,7 +3163,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 2em 6em 2em 6em ;
 		background-color: #f6f6f6;
 	}
 
@@ -3189,13 +3187,15 @@ input, select, textarea {
 			}
 
 			#footer > .inner section:nth-child(1) {
-				width: calc(66% - 2.5em);
-				margin-right: 2.5em;
+				width: 50%; /* 66%를 50%로 변경 */
+    			position: relative;
+    			left: 0; /* 왼쪽에 붙이기 */
 			}
 
 			#footer > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
-				margin-left: 2.5em;
+				width: 50%; /* 33%를 50%로 변경 */
+    			position: relative;
+    			right: 0; /* 오른쪽에 붙이기 */
 			}
 
 			#footer > .inner .copyright {
