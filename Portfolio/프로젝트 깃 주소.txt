@@ -1,0 +1,23 @@
+
+< 프로젝트 깃 주소 >
+
+C 프로젝트
+https://github.com/JeongYoonBaek/A11_BCS
+
+SQL 프로젝트
+https://github.com/JeongYoonBaek/SQL_teampj
+
+C# 프로젝트
+https://github.com/JeongYoonBaek/C-Project
+
+Python 프로젝트
+https://github.com/jongkweanlee/KBAI11_Kakao_Chatbot
+
+Web 프로젝트
+https://github.com/HyojeongChoe/Web_Project
+
+
+
+
+
+
