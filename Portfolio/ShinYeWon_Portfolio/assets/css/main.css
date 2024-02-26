@@ -3327,3 +3327,17 @@ input, select, textarea {
 			}
 
 		}
+
+		.introduce-container {
+			display: flex;
+		}
+		
+		.introduce_image {
+			flex: 1;
+			/* 다른 스타일 속성들 */
+		}
+		
+		.introduce_text {
+			flex: 1;
+			/* 다른 스타일 속성들 */
+		}
